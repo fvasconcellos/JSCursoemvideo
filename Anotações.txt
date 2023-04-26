@@ -1,0 +1,143 @@
+Regras para Identificadores -variáveis
+
+Podem começar com LETRA, $ OU _
+Não podem começar com NÚMEROS
+É possível usar LETRAS ou NÚMEROS
+É possível usar ACENTOS e SÍMBOLOS
+Não podem conter ESPAÇOS
+Não podem ser PALAVRAS RESERVADAS. 
+
+Tipos de Dados Primitivos- variáveis
+
+number  (1 5 5.5 -15.9)
+  Infinity
+  NaN
+string  ('javascript'  "Fernando")
+boolean (true, false)
+null
+undefined
+object
+  Array
+function
+
+prompt sempre vai retornar uma string.
+sempre que for declarar uma váriável é necessário indicar se ela é string, number e etc. 
+
+CONVERSÃO
+Number.parseInt(n) caso a variável tenha que ser somente interira
+Number.parseFloat(n) caso a variável tenha que ser somente float
+Number(n) A junção das duas, o js decide se é inteiro ou float.
+string(n) converter algo para string
+n.toString() mesma coisa
+
+FORMATANDO NUMER
+var n1 = 1545.5
+n1.toFixed(2) // 1545.50 aumenta a casa decimal após a virgula
+n1.toFixed(2).replace('.',',') // 1545,50 transforma o ponto para virgula
+n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}) // converte para moeda R$
+n1.toLocaleString('pt-BR', {style: 'currency', currency: 'USD'} // // converte para moeda $ e assim por diante. 
+Aqui você está localizando a moeda do pais, "toLocaleString 'pt-BR'", aqui está falando que é dinheiro 'style: currency', e 'currency: BRL' está falando em qual moeda vai ser. 
+
+FORMATANDO STRINGS
+var s = 'JavaScrip'
+'Eu estou apredendo s' // não faz interpolação
+'Eu estou apredendo' + s // usa concatenação
+`Eu estou apredendo ${s}` // usa template string
+Ex: `O aluno ${nome} com ${idade} anos tirou a nota ${nota}`
+O aluno Fernando com 29 anos tirou a nota 10
+Outros formatos
+s.length // quantos caracteres a string tem
+s.toUpperCase() // Tudo para MAIÚSCULAS
+s.toLowerCase() // tudo para minúsculas
+
+OPERADORES
+
+Aritméticos
+Atribuição
+Relacionais
+Lógicos
+Ternário
+
+Aritméticos
+
+5 + 2 = 7
+5 - 2 = 3
+5 * 2 = 10
+5 / 2 = 2,5
+5 % 2 = 1  (% é para descobrir o resto da divisão)
+5 ** 2 = 25 (** potência)
+
+Ordem de precedência dos OPERADORES (Ordem na execução de um Calculo)
+
+1 ()
+2 **
+3 * / % 
+4 + -
+
+Atribuição
+
+Apenas atribui novos valores ao o antigo
+
+Ex.: n = 1
+n += 2
+"n" agora é 3 
+
+Relacionais
+
+>
+<
+>=
+<=
+== mesmo valor
+=== mesmo valor e tipo
+
+Operadores relacionais não tem ordem, o que aparecer primeiro será executado (Da esquerda para direita)
+
+Lógicos
+
+! negação
+&& conjunção
+|| disjunção
+
+A ordem de execução de uma expressão que conta com todos os operadores lógicos é.: 1- ! 2- && 3- ||
+
+Ternário
+
+teste ? true : false
+ele vai da o retorno de uma teste lógico informando se é verdadeiro ou falso.
+
+Ex.: média >= 7 ? "APROVADO" : "REPROVADO"
+
+
+Ordem de execução de operadores em uma expressão
+
+1 Aritméticos 
+2 Relacionais
+3 Lógicos
+4 ternário
+
+Ex.: a = 5  b = 8
+a > b && b % 2 == 0 
+Resto de b / 2 é 0 então 0 == 0 o que torna "true", A é menor que B logo a afirmação é "false"
+
+Ordem de execução OPERADORES
+
+1 () ** / etc..
+2 > < >= etc..
+3 !
+4 &&
+5 ||
+6 ? :
+
+DOM = Document object model 'Modelo de Objeto de Documentos'
+
+
+Manipula dados do site selecionando elementos 
+
+* por marca " getElementsByTagName() " 
+* por ID " getElementByld() "
+* por nome " getElementsByName() "
+* por classe " getElementsByClassName() "
+* por seletor " querySelector() - Singular e querySelectorAll() - Plural "
+
+Com eles consigo pegar, alterar qualquer dado do site, algumas delas é necessário informar entre cochetes qual o elemento você quer selecionar, porém * seletor já posso dizer se quero apenas um ou vários sem a necessidade de informar qual quero pegar. 

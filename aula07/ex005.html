@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ex005</title>
+  </head>
+  <body>
+    <script>
+      //Atribuição Simples
+      var a = 5 + 3;
+      //document.write(`${a}`);
+      var b = a % 5;
+      //document.write(`${b}`);
+      var c = 5 * b ** 2;
+      var d = 10 - a / 2;
+      var e = (6 * 2) / d;
+      var f = (b % e) + 4 / e;
+      //document.write(`${f}`);
+
+      //Auto-atribuição
+      var n = 3;
+      n = n + 4;
+      n = n - 5;
+      n = n * 4;
+      //Simplificando
+      n += 4; // Só funciona se a variável recebe ela mesma e somando ou diminuindo etc.. outro valor. Também existe o incremento x++
+      n++;
+      document.write(`${n}`);
+    </script>
+  </body>
+</html>
