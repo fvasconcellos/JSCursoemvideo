@@ -1,6 +1,6 @@
 // Recursividade
 
-function fatorial(n) {
+/*function fatorial(n) {
     if (n == 1) {
         return 1;
     } else {
@@ -19,3 +19,15 @@ n! = n x (n-1)! para chamar uma função dentro de outra usando o fatorial é ap
 1! = 1  matematicamente o fatorial de 1 é sempre 1.
 
 */
+
+function maior() {
+    let maiorNumero = 0;
+    for (let i = 0; i < lista.length; i++) {
+        let valor = lista[i];
+        if (valor > maiorNumero) {
+            return maiorNumero = valor;
+        }
+    }
+
+}
+console.log(maior());
